@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "cilent-install" : "cd cilent && npm install",
+    "cilent-build" : "cd cilent && npm run build",
+    "heroku-postbuild": "npm run cilent-install && npm run cilent-build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-pay/button-react": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dot-env": "0.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "formidable": "^2.0.1",
+    "https": "^1.0.0",
+    "mongoose": "^6.0.12",
+    "mongoose-auto-increment": "^5.0.1",
+    "nodemon": "^2.0.14",
+    "paytmchecksum": "^1.5.0",
+    "uuid": "^8.3.2"
+  }
+}
